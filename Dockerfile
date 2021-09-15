@@ -1,7 +1,7 @@
 ARG CI_REGISTRY_IMAGE
 ARG DAVFS2_VERSION
 FROM ${CI_REGISTRY_IMAGE}/nc-webdav:${DAVFS2_VERSION}
-LABEL maintainer="<maintainer@example.com>"
+LABEL maintainer="nathalie.casati@chuv.ch"
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG CARD
