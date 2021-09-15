@@ -17,7 +17,7 @@ RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install --no-install-recommends -y \ 
     curl unzip libqt5core5a libqt5gui5 libqt5network5 \
-    libqt5printsupport5 libqt5widgets5 libqt5x11extras5 && \
+    libqt5printsupport5 libqt5widgets5 libqt5x11extras5 libopenjp2-7 && \
     curl -O -L https://github.com/davidbannon/libqt5pas/releases/download/v1.2.9/libqt5pas1_2.9-0_amd64.deb && \
     dpkg -i libqt5pas1_2.9-0_amd64.deb && \
     rm libqt5pas1_2.9-0_amd64.deb && \
