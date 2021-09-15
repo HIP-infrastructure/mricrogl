@@ -24,7 +24,7 @@ RUN apt-get update && \
     curl -O -L https://github.com/rordenlab/MRIcroGL/releases/download/v${APP_VERSION}/MRIcroGL_linux.zip && \
     mkdir ./install && \
     unzip -q -d ./install MRIcroGL_linux.zip && \
-    rm -rf MRIcroGL_linux.zip && \
+    rm MRIcroGL_linux.zip && \
     apt-get remove -y --purge curl unzip && \  
     apt-get autoremove -y --purge && \
     apt-get clean && \
