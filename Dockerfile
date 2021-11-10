@@ -33,7 +33,8 @@ RUN apt-get update && \
 ENV APP_SHELL="no"
 ENV APP_CMD="/apps/${APP_NAME}/install/MRIcroGL/MRIcroGL_QT"
 ENV PROCESS_NAME="/apps/${APP_NAME}/install/MRIcroGL/MRIcroGL_QT"
-ENV DIR_ARRAY=""
+ENV APP_DATA_DIR_ARRAY=""
+ENV DATA_DIR_ARRAY=""
 
 HEALTHCHECK --interval=10s --timeout=10s --retries=5 --start-period=30s \
   CMD sh -c "/apps/${APP_NAME}/scripts/process-healthcheck.sh \
